@@ -1,0 +1,48 @@
+{
+  "name": "@vi.son/components",
+  "version": "0.0.1",
+  "description": "Styled react component library for vi.son — mixing senses",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode production --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vi-son/components.git"
+  },
+  "keywords": [
+    "react-components",
+    "library",
+    "art",
+    "creative code"
+  ],
+  "author": "Guido Schmidt <git@guidoschmidt.cc>",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/vi-son/components/issues"
+  },
+  "homepage": "https://github.com/vi-son/components#readme",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@vi.son/rouge": "^1.0.4",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.7",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
