@@ -3,18 +3,14 @@ import React, { useState } from "react";
 import { kt } from "../kirbytext.js";
 
 const TextBlock = ({ content }) => {
-  const [foldOut, setFoldout] = useState(false);
-
   return (
     <section className="block text">
       {content.headline !== undefined ? (
-        <h2 className="heading" onClick={() => setFoldout(!foldOut)}>
-          {content.headline}
-        </h2>
+        <h2 className="heading">{content.headline}</h2>
       ) : (
         <></>
       )}
-      <div className={["foldout", foldOut ? "open" : "close"].join(" ")}>
+      <div className="foldout">
         {content.preheadline !== undefined ? (
           <h4 className="preheading">{content.preheadline}</h4>
         ) : (
