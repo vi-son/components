@@ -5,27 +5,10 @@ $padding-l: 120px
 $padding-s: 30px
 
 .layout-narrative
-  position: absolute
-  right: 0
-  top: 0
-  width: 70vw
-  max-width: 70vw
   z-index: +1
-  transition: transform 0.3s ease
   box-shadow: 0 0 120px rgba(0, 0, 0, 0.1)
   min-height: 100vh
-  .scroll-wrapper
-    background: var(--color-snow)
-    position: absolute
-    display: grid
-    grid-template-columns: 1fr
-    overflow-y: scroll
-    height: auto
-  &.hidden
-    transform: translateX(100vw)
-    transition: transform 0.5s 0.1s ease
-  &.visible
-    transform: translateX(0)
+  background: var(--color-snow)
 
   +until($tablets)
     width: 100vw
@@ -33,10 +16,10 @@ $padding-s: 30px
     .scroll-wrapper
       height: 100vh
       position: relative
-    &.hidden
-      transform: translateY(100vh)
-    &.visible
-      transform: translateY(0)
+    /* &.hidden
+    /*   transform: translateY(100vh)
+    /* &.visible
+    /*   transform: translateY(0)
 
   *
     max-width: 100%

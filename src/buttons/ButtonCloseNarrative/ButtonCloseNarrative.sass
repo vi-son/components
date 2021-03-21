@@ -5,7 +5,6 @@
 .btn-close-details
   position: fixed
   top: 20px
-  left: calc(30vw - 70px)
   width: 100px
   height: 100px
   display: flex
@@ -25,5 +24,6 @@
     width: 50px
     height: 50px
     font-size: 2rem
-    top: -10px
-    left: 10px
+
+  +from($desktops)
+    right: calc(70vw - 50px)

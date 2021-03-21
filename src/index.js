@@ -3,6 +3,7 @@ import ButtonDownloadRendering from "./buttons/ButtonDownloadRendering/ButtonDow
 import ButtonOpenNarrative from "./buttons/ButtonOpenNarrative/ButtonOpenNarrative.js";
 import ButtonToExhibition from "./buttons/ButtonToExhibiton/ButtonToExhibition.js";
 import Narrative from "./narrative/Narrative/Narrative.js";
+import ExhibitionLayout from "./layouts/ExhibitionLayout.js";
 import {
   CiteBlock,
   HyperlinkBlock,
@@ -14,6 +15,7 @@ import {
   TextBlock,
   PodcastBlock,
 } from "./narrative/Blocks";
+import utils from "./utils.js";
 
 export {
   ButtonOpenNarrative,
@@ -30,4 +32,6 @@ export {
   ImageBlock,
   TextBlock,
   PodcastBlock,
+  utils,
+  ExhibitionLayout,
 };

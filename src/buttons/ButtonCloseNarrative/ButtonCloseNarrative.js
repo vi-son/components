@@ -12,11 +12,7 @@ const ButtonCloseNarrative = ({ showNarrative, setShowNarrative }) => {
       ].join(" ")}
       onClick={() => setShowNarrative(false)}
     >
-      {window.matchMedia("(max-width: 768px)").matches ? (
-        <span>☝️</span>
-      ) : (
-        <span>👈</span>
-      )}
+      <span>👈</span>
     </button>
   );
 };
