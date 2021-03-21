@@ -10,7 +10,7 @@
   justify-content: center
   align-items: center
   padding: 0
-  transition: background 1s ease
+  transition: background 1s ease, transform 1s ease
   &:hover
     background: var(--color-curacao)
   +until($tablets)
@@ -19,3 +19,10 @@
     font-size: 2rem
     top: 0
     right: 10px
+
+
+.layout-exhibition
+  &.with-aside
+    .btn-open-narrative
+      transition: background 1s ease, transform 1s 0.1s ease
+      transform: translateX(20vw)

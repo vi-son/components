@@ -14,4 +14,14 @@ const mobileCheck = function () {
   return check;
 };
 
-export default { mobileCheck };
+const requestFullscreen = (canvas) => {
+  if (canvas.requestFullScreen) {
+    canvas.requestFullScreen();
+  } else if (canvas.webkitRequestFullScreen) {
+    canvas.webkitRequestFullScreen();
+  } else if (canvas.mozRequestFullScreen) {
+    canvas.mozRequestFullScreen();
+  }
+};
+
+export default { mobileCheck, requestFullscreen };

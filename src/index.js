@@ -15,23 +15,25 @@ import {
   TextBlock,
   PodcastBlock,
 } from "./narrative/Blocks";
+import Kontrol from "./kontrol/Kontrol.js";
 import utils from "./utils.js";
 
 export {
-  ButtonOpenNarrative,
-  ButtonToExhibition,
+  AudioBlock,
   ButtonCloseNarrative,
   ButtonDownloadRendering,
-  Narrative,
+  ButtonOpenNarrative,
+  ButtonToExhibition,
   CiteBlock,
-  HyperlinkBlock,
-  VideoEmedBlock,
-  ReferencesBlock,
-  AudioBlock,
-  ImageGridBlock,
-  ImageBlock,
-  TextBlock,
-  PodcastBlock,
-  utils,
   ExhibitionLayout,
+  HyperlinkBlock,
+  ImageBlock,
+  ImageGridBlock,
+  Kontrol,
+  Narrative,
+  PodcastBlock,
+  ReferencesBlock,
+  TextBlock,
+  VideoEmedBlock,
+  utils,
 };

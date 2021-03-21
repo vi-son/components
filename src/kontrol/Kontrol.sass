@@ -1,0 +1,49 @@
+@import @vi.son/rouge/1-settings/_colors.sass
+@import @vi.son/rouge/1-settings/_breakpoints.sass
+@import @vi.son/rouge/2-tools/_media-queries.sass
+
+=kontrol-button
+  padding: 5px 10px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  margin: 0
+  transition: background-color 200ms linear
+  border-bottom: 1px solid var(--color-dirtysnow)
+  &:hover
+    background: var(--color-dirtysnow)
+    color: var(--color-darkness)
+
+.kontrol-toggle
+  margin: 0
+  padding: 5px 10px
+  width: 100px
+  height: 100px
+  border-radius: 5px
+  z-index: +1
+
+.kontrol
+  z-index: 99999
+  display: flex
+  flex-direction: column
+  transition: transform 0.5s ease
+  &.open
+    transform: translateY(0)
+  &.closed
+    transform: translateY(-100vh)
+
+  .emoji
+    margin-right: 5px
+    font-size: 10px
+
+  .kontrol-btn
+    +kontrol-button
+
+  .kontrol-fileupload
+    display: flex
+    justify-content: stretch
+    flex-grow: 1
+    .btn-file
+      +kontrol-button
+      flex-grow: 1
+      min-height: 35px
