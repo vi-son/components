@@ -1,0 +1,44 @@
+@import @vi.son/rouge/1-settings/_colors
+@import @vi.son/rouge/1-settings/_breakpoints
+@import @vi.son/rouge/2-tools/_media-queries
+
+.btn-emoji
+  z-index: 999
+  display: flex
+  justify-content: center
+  align-items: center
+  background: none
+  display: flex
+  flex-direction: row
+  pointer-events: all
+  .btn
+    margin: 0
+    border-radius: 60px
+    width: 100px
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    +until($tablets)
+      display: none
+      width: 50px
+      height: 50px
+      font-size: 2rem
+      top: 0
+      right: 10px
+  &:hover
+    background: none
+    .btn
+      background: var(--color-curacao)
+    .text
+      opacity: 1
+      transform: translateY(0)
+  .text
+    position: relative
+    opacity: 0
+    font-weight: bold
+    color: var(--color-snow)
+    font-size: 1.25rem
+    transition: transform 1s ease, opacity 1s ease
+    transform: translateY(30px)
+    margin: 0 20px
