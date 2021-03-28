@@ -1,3 +1,5 @@
+import md5 from "blueimp-md5";
+
 const mobileCheck = function () {
   let check = false;
   (function (a) {
@@ -24,4 +26,17 @@ const requestFullscreen = (canvas) => {
   }
 };
 
-export default { mobileCheck, requestFullscreen };
+const downloadRendering = (canvas) => {
+  return new Promise((resolve, reject) => {
+    const imageData = canvas.toDataURL();
+    const downloadLink = document.createElement("a");
+    const dataStr = imageData;
+    downloadLink.href = dataStr;
+    downloadLink.download = `${md5(Date.now())}.png`;
+    document.body.append(downloadLink);
+    downloadLink.click();
+    resolve();
+  });
+};
+
+export default { mobileCheck, requestFullscreen, downloadRendering };
