@@ -27,6 +27,8 @@
   display: flex
   flex-direction: column
   transition: transform 0.5s ease
+  width: auto
+  align-self: start
   &.open
     transform: translateY(0)
   &.closed
@@ -47,3 +49,7 @@
       +kontrol-button
       flex-grow: 1
       min-height: 35px
+
+  .kontrol-divider
+    height: 5px
+    background: var(--color-oldsnow)
