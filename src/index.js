@@ -1,3 +1,4 @@
+import ButtonEmoji from "./buttons/ButtonEmoji/ButtonEmoji.js";
 import ButtonCloseNarrative from "./buttons/ButtonCloseNarrative/ButtonCloseNarrative.js";
 import ButtonDownloadRendering from "./buttons/ButtonDownloadRendering/ButtonDownloadRendering.js";
 import ButtonOpenNarrative from "./buttons/ButtonOpenNarrative/ButtonOpenNarrative.js";
@@ -22,6 +23,7 @@ export {
   AudioBlock,
   ButtonCloseNarrative,
   ButtonDownloadRendering,
+  ButtonEmoji,
   ButtonOpenNarrative,
   ButtonToExhibition,
   CiteBlock,
