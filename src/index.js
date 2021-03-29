@@ -15,6 +15,7 @@ import {
   ImageBlock,
   TextBlock,
   PodcastBlock,
+  ArtworkDescriptionBlock,
 } from "./narrative/Blocks";
 import Kontrol from "./kontrol/Kontrol.js";
 import utils from "./utils.js";

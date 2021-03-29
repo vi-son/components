@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 // Local imports
 import TextBlock from "../blocks/TextBlock.js";
 import ImageBlock from "../blocks/ImageBlock.js";
@@ -9,6 +10,7 @@ import VideoEmedBlock from "../blocks/VideoEmbedBlock.js";
 import HyperlinkBlock from "../blocks/HyperlinkBlock.js";
 import CiteBlock from "../blocks/CiteBlock.js";
 import PodcastBlock from "../blocks/PodcastBlock.js";
+import { kt } from "../kirbytext.js";
 // Style imports
 import "./Narrative.sass";
 import "../Blocks/Blocks.sass";
@@ -19,9 +21,22 @@ const Narrative = ({ show, content, version }) => {
       className={["layout-narrative", show ? "visible" : "hidden"].join(" ")}
     >
       <div className="header">
-        <h1>{content.title}</h1>
-        <article>{content.shortdesription}</article>
+        <h1 className="title">{content.title}</h1>
+        <h3 className="artitst-and-date">
+          <span className="artists">
+            {content.artists
+              ? content.artists.map((a) => a.artist_name).join(", ")
+              : ""}
+          </span>
+          <span className="publish-date">
+            {moment(content.published).format("MM/YYYY")}
+          </span>
+        </h3>
+        <article className="description">
+          {kt(content.shortdescription)}
+        </article>
       </div>
+
       <div className="content">
         {content.blocks ? (
           content.blocks.map((block) => {
