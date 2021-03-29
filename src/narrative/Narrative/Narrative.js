@@ -33,7 +33,7 @@ const Narrative = ({ show, content, version }) => {
           </span>
         </h3>
         <article className="description">
-          {kt(content.shortdescription)}
+          {kt(content.artwork_description)}
         </article>
       </div>
 
