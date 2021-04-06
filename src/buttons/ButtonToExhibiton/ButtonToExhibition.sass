@@ -23,17 +23,24 @@
   &.light
     background: var(--color-snow)
     color: var(--color-darkness)
+  .text
+    position: relative
+    opacity: 0
+    font-weight: bold
+    font-size: 1.25rem
+    transition: transform 1s ease, opacity 1s ease
+    transform: translateY(30px)
+    margin: 0 20px
   &:hover
-    color: var(--color-snow)
-    background: var(--color-darkness)
-  .description
-    margin-right: 20px
-    margin-left: 20px
+    .text
+      color: var(--color-darkness)
 
-  &.width-text
-    .description
+  &.hidden-text
+    .text
       transform: translateY(100px)
       transition: transform 100ms ease
+      opacity: 0
     &:hover
-      .description
+      .text
         transform: translateY(0)
+        opacity: 1

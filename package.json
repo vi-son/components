@@ -1,6 +1,6 @@
 {
   "name": "@vi.son/components",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Styled react component library for vi.son — mixing senses",
   "module": "dist/index.js",
   "scripts": {

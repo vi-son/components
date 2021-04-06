@@ -25,7 +25,7 @@ const ButtonToExhibition = ({ onClick, withText, light }) => {
       onClick={onClick}
     >
       <span className="emoji">🏛️</span>
-      <span className="description">Zum Foyer</span>
+      <span className="text">Zum Foyer</span>
     </WrappedLink>
   );
 };
