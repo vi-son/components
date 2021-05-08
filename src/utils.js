@@ -39,4 +39,8 @@ const downloadRendering = (canvas) => {
   });
 };
 
-export default { mobileCheck, requestFullscreen, downloadRendering };
+export default {
+  mobileCheck,
+  requestFullscreen,
+  downloadRendering,
+};
