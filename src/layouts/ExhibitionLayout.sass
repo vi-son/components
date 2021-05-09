@@ -45,12 +45,18 @@
     min-height: 100vh
     height: auto
     width: 100vw
-    overflow: scroll
     scrollbar-width: none
     display: flex
     justify-content: center
     align-items: center
+    z-index: +1
+    height: 100%
+    overflow: scroll
+    width: 100vw
+    scrollbar-width: none
     pointer-events: none
+    &.clickable
+      pointer-events: all
 
   .side-panel
     pointer-events: all

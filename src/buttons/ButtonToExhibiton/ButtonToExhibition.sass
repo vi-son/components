@@ -1,3 +1,5 @@
+@import @vi.son/rouge/1-settings/_breakpoints
+@import @vi.son/rouge/2-tools/_media-queries
 @import @vi.son/rouge/1-settings/_colors.sass
 
 .btn-to-exhibition
@@ -20,6 +22,15 @@
   margin-top: 30px
   box-shadow: 0 0 0 rgba(0, 0, 0, 1)
   transition: box-shadow 300ms ease
+  +until($tablets)
+    background: var(--color-snow)
+    border-radius: 100px
+    padding: 15px
+    left: 20px
+    bottom: 20px
+    position: fixed
+    .text
+      display: none
   &.light
     background: var(--color-snow)
     color: var(--color-darkness)

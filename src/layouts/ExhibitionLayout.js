@@ -2,7 +2,13 @@ import React from "react";
 // Style imports
 import "./ExhibitionLayout.sass";
 
-const ExhibitionLayout = ({ fixed, content, showAside, aside }) => {
+const ExhibitionLayout = ({
+  fixed,
+  content,
+  showAside,
+  aside,
+  clickable = false,
+}) => {
   return (
     <>
       <main
@@ -17,7 +23,9 @@ const ExhibitionLayout = ({ fixed, content, showAside, aside }) => {
           showAside ? "with-aside" : "without-aside"
         }`}
       >
-        <main className="main-content">{content}</main>
+        <main className={`main-content ${clickable && "clickable"}`}>
+          {content}
+        </main>
         <aside className="side-panel">{aside}</aside>
       </div>
     </>
