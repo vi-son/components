@@ -1,7 +1,7 @@
 // node_modules imports
 import React, { useState } from "react";
 // Local imports
-// import Audioplayer from "../components/AudioPlayer.js";
+import Audioplayer from "../../audio/AudioPlayer.js";
 import { kt } from "../kirbytext.js";
 
 const AudioBlock = ({ content }) => {
@@ -9,12 +9,10 @@ const AudioBlock = ({ content }) => {
 
   return (
     <section className="block audio">
-      {/* <Audioplayer */}
-      {/*   audiosrc={ */}
-      {/*     content.audiofile !== undefined ? content.audiofile[0].url : "" */}
-      {/*   } */}
-      {/* /> */}
-      <article>{content.text !== undefined ? kt(content.text) : ""}</article>
+      <Audioplayer src={content.audiofile[0].url} />
+      <article className="text">
+        {content.text !== undefined ? kt(content.text) : ""}
+      </article>
     </section>
   );
 };
