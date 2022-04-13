@@ -31,4 +31,4 @@ const ButtonDownloadRendering = ({ canvasRef, onRequest, onDownload }) => {
   );
 };
 
-export default ButtonDownloadRendering;
+export { ButtonDownloadRendering };

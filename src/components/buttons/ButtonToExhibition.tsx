@@ -1,5 +1,4 @@
 import React from "react";
-// Style imports
 import "./ButtonToExhibition.sass";
 
 const ButtonToExhibition = ({ onClick, withText, light }) => {
@@ -30,4 +29,4 @@ const ButtonToExhibition = ({ onClick, withText, light }) => {
   );
 };
 
-export default ButtonToExhibition;
+export { ButtonToExhibition };
